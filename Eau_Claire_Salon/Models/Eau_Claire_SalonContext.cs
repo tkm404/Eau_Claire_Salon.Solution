@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace [ProjectNameWithoutBracks].Models
+namespace Eau_Claire_Salon.Models
 {
-  public class [ProjectNameWithoutBracks]Context : DbContext
+  public class Eau_Claire_SalonContext : DbContext
   {
     public DbSet<PrimaryModel> PrimaryModel { get; set; }
     public DbSet<SecondaryModel> SecondaryModel { get; set; }
 
-    public [ProjectNameWithoutBracks]Context(DbContextOptions options) : base(options) { }
+    public Eau_Claire_SalonContext(DbContextOptions options) : base(options) { }
   }
 }
 

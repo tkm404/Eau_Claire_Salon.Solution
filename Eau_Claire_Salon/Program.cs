@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using [ProjectNameWithoutBracks].Models;
+using Eau_Claire_Salon.Models;
 
-namespace [ProjectNameWithoutBracks]
+namespace Eau_Claire_Salon
 {
   class Program
 {
@@ -14,7 +14,7 @@ namespace [ProjectNameWithoutBracks]
 
         builder.Services.AddControllersWithViews();
 
-        builder.Services.AddDbContext <[ProjectNameWithoutBracks]Context > (
+        builder.Services.AddDbContext <Eau_Claire_SalonContext > (
                           dbContextOptions => dbContextOptions
                             .UseMySql(
                               builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(builder.Configuration["ConnectionStrings:DefaultConnection"]

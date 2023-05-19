@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace [ProjectNameWithoutBracks].Models
+namespace Eau_Claire_Salon.Models
 {
   public class ModelName
   {
