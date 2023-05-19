@@ -1,15 +1,12 @@
-# IMPORTANT TEMPLATE USAGE STUFF IN THE README
-Follow along below, replace with your own work as needed:
+# Eau Claire's Salon (Week 9 ICR)
 
-# TITLE
-#### Brief Description/Overview  
+#### Week 9 Code Review at Epicodus. Section: Database Basics. A project to demonstrate my knowledge of using a Database to update a web application. Simulating an application being used by "Claire" to keep track of their employees and clients at a hair salon. 
 
-#### By (your name here)  
+#### By Thomas McDowell 
 
 ## Technologies Used:
 * C#
 * .NET 6.0
-* MSTest (if needed)
 * MySql
 
 ## Description:
@@ -34,7 +31,6 @@ Install the tools that are introduced in [this series of lessons on LearnHowToPr
 Follow the instructions in the LearnHowToProgram.com lesson ["Creating a Test Database: Exporting and Importing Databases with MySQL Workbench"](https://www.learnhowtoprogram.com/lessons/creating-a-test-database-exporting-and-importing-databases-with-mysql-workbench). use the example of `todolist_with_ef_core_dump.sql` to create a new database in MySQL Workbench with the name of your project `project_name`.
 
 ### Set Up and Run Project
-**a. Click "Use This Template" button on the main page. [Read more here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) delete this before pushing your real project.**
 1. Clone this repo.
 2. Open the terminal and navigate to this project's production directory called "CsharpTemplate". //Rename this with your project name and delete all this text between the forward-slashes. Also look carefully throughout and replace all placeholder [things in bracks] with your project's name and model names.//
 3. Within the production directory "CsharpTemplate", create a new file called `appsettings.json`.
