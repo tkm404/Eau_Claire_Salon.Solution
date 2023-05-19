@@ -33,6 +33,10 @@ public class ClientController : Controller
 		[HttpPost]
 		public ActionResult Create(Client client)
 		{
+			if (client.StylistsId == 0)
+			{
+				return RedirectToAction("Create");
+			}
 			_db.Clients.Add(client);
 			_db.SaveChanges();
 			return RedirectToAction("Index");
