@@ -5,11 +5,17 @@
 @model HairSalon.Models.Client
 
 <h4>Add a new Client:</h4>
+
+
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.ClientName)
   @Html.TextBoxFor(model => model.ClientName)
-  <input type="submit" value="Add Client" />
+
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistsId")
+
+  <input type="submit" value="Add Client" class="btn btn-primary" />
 }
 
 
