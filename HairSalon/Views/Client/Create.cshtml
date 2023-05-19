@@ -5,11 +5,13 @@
 @model HairSalon.Models.Client
 
 <h4>Add a new Client:</h4>
-
+<hr />
+<div>
 <p><strong>Stop! In the Name of Hair!</strong></p>
 <p>Before you upset Claire, you need to add at least one Stylist before you can add any Clients!</p>
 <p>Go to @Html.ActionLink("the Add Stylists Page", "Create", "Stylist") before you proceed.</p>
-
+</div>
+<hr />
 <div>
 @using (Html.BeginForm())
 {
