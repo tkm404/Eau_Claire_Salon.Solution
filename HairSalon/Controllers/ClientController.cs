@@ -26,14 +26,14 @@ public class ClientController : Controller
 
 		public ActionResult Create()
 		{
-			ViewBag.StylistId = new SelectList(_db.Stylists, "StylistsId", "Name");
+			ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "Name");
 			return View();
 		}
 
 		[HttpPost]
 		public ActionResult Create(Client client)
 		{
-			if (client.StylistsId == 0)
+			if (client.StylistId == 0)
 			{
 				return RedirectToAction("Create");
 			}
@@ -46,14 +46,14 @@ public class ClientController : Controller
 		{
 			Client thisClient = _db.Clients
 															.Include(client => client.Stylist)
-															.FirstOrDefault(client => client.ClientsId == id);
+															.FirstOrDefault(client => client.ClientId == id);
 			return View(thisClient);
 		}
 
 		public ActionResult Edit(int id)
 		{
-			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
-			ViewBag.StylistsId = new SelectList(_db.Stylists, "StylistsId", "Name");
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+			ViewBag.StylistId = new SelectList(_db.Stylists, "StylistsId", "Name");
 			return View(thisClient);
 		}
 		[HttpPost]
@@ -66,14 +66,14 @@ public class ClientController : Controller
 
 		public ActionResult Delete(int id)
 		{
-			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
 			return View(thisClient);
 		}
 
 		[HttpPost, ActionName("Delete")]
 		public ActionResult DeleteConfirmed(int id)
 		{
-			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
 			_db.Clients.Remove(thisClient);
 			_db.SaveChanges();
 			return RedirectToAction("Index");
