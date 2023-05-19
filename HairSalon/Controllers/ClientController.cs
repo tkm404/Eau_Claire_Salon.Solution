@@ -40,7 +40,9 @@ public class ClientController : Controller
 
 		public ActionResult Details(int id)
 		{
-			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			Client thisClient = _db.Clients
+															.Include(client => client.Stylist)
+															.FirstOrDefault(client => client.ClientsId == id);
 			return View(thisClient);
 		}
 
