@@ -39,6 +39,19 @@ public class ClientController : Controller
 			return View(thisClient);
 		}
 
+		public ActionResult Edit(int id)
+		{
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			return View(thisClient);
+		}
+		[HttpPost]
+		public ActionResult Edit (Client client)
+		{
+			_db.Clients.Update(client);
+			_db.SaveChanges();
+			return RedirectToAction("Index");
+		}
+
 
   }
 }
