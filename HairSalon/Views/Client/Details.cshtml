@@ -8,5 +8,7 @@
 <hr />
 <h3>@Html.DisplayNameFor(model => model.ClientName): @Html.DisplayFor(model => model.ClientName)</h3>
 
+
+<p>@Html.ActionLink("Edit this Client?", "Edit", new { id = Model.ClientsId })</p>
 <p>@Html.ActionLink("Back to Client list", "Index")</p>
 <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
