@@ -10,19 +10,23 @@
 <p>Before you upset Claire, you need to add at least one Stylist before you can add any Clients!</p>
 <p>Go to @Html.ActionLink("the Add Stylists Page", "Create", "Stylist") before you proceed.</p>
 
-
+<div>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.ClientName)
+  <label for="client_name">Client Name: </label>
   @Html.TextBoxFor(model => model.ClientName)
-
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistsId")
-
+<br>
+<br>
+<label for="stylist">Stylist: </label>
+  @Html.DropDownList("StylistId")
+<br>
+<br>
   <input type="submit" value="Add Client" class="btn btn-primary" />
 }
-
-
+</div>
+<br>
+<div>
 <p>@Html.ActionLink("See all clients", "Index")</p>
 <p>@Html.ActionLink("See all stylists", "Index", "Stylist")</p>
 <p>@Html.ActionLink("Back to Home Page", "Index", "Home")</p>
+</div>

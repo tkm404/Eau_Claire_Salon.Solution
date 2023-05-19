@@ -6,7 +6,8 @@
 @model List<HairSalon.Models.Client>;
 
 <h2>Our Happy Clients!</h2>
-
+<hr />
+<div>
 @if (@Model.Count == 0)
 {
   <h3>No Clients to show.</h3>
@@ -16,7 +17,10 @@ else
 {
   <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | Styled By: @client.Stylist.Name</li>
 }
-
+</div>
+<br>
+<div>
 <p>@Html.ActionLink("Add a new client", "Create")</p>
 <p>@Html.ActionLink("See all stylists", "Index", "Stylist")</p>
 <p>@Html.ActionLink("Back to Home Page", "Index", "Home")</p>
+</div>

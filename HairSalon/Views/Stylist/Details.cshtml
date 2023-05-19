@@ -7,6 +7,7 @@
 
 <h2>Stylist Details</h2>
 <hr />
+<div>
 <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
 
 @if (@Model.Clients.Count == 0)
@@ -19,14 +20,17 @@ else
   <ul>
     @foreach (Client client in Model.Clients)
     {
-      <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId })</li>
+      <li>@Html.ActionLink($"{client.ClientName}", "Details", "Client", new { id = client.ClientId })</li>
     }
   </ul>
 }
+</div>
+<br>
 
-
+<div>
 <p>@Html.ActionLink("Get this Hair Care Extraordinare some Clients!", "Create", "Client")</p>
 <p>@Html.ActionLink("Edit this Stylist?", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete this Stylist?", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to Stylist list", "Index")</p>
 <p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
+</div>
