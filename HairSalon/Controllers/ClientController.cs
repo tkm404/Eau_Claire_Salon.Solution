@@ -45,9 +45,24 @@ public class ClientController : Controller
 			return View(thisClient);
 		}
 		[HttpPost]
-		public ActionResult Edit (Client client)
+		public ActionResult Edit(Client client)
 		{
 			_db.Clients.Update(client);
+			_db.SaveChanges();
+			return RedirectToAction("Index");
+		}
+
+		public ActionResult Delete(int id)
+		{
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			return View(thisClient);
+		}
+
+		[HttpPost, ActionName("Delete")]
+		public ActionResult DeleteConfirmed(int id)
+		{
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			_db.Clients.Remove(thisClient);
 			_db.SaveChanges();
 			return RedirectToAction("Index");
 		}
