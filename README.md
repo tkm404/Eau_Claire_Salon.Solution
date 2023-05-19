@@ -19,6 +19,10 @@ This will be a MVC web application to manage employees (stylists) and their clie
 3. add new stylists to the system when they are hired.
 4. add new clients to a specific stylist. Clients cannot be added if there are no stylists.
 
+For the purposes of this project, my production database should be titled as firstName_lastName, and my production directory is titled HairSalon.
+
+
+
 ## Setup/Installation Req's:
 
 ### Install Tools

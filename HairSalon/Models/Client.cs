@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace HairSalon.Models
 {
-  public class ModelName
+  public class Client
   {
 
   }
