@@ -13,7 +13,11 @@ Follow along below, replace with your own work as needed:
 * MySql
 
 ## Description:
-Long Description / Mission Statement / What the app do.  
+This will be a MVC web application to manage employees (stylists) and their clients. The user should be able to add a list of stylists working at their salon, and for each stylist, add the clients who see them. The stylists have specific specialities, so each client can only belong to a single stylist. The user needs to be able to:
+1. See a list of all stylists.
+2. select a stylist, see their details, and see a list of all clients that belong to them.
+3. add new stylists to the system when they are hired.
+4. add new clients to a specific stylist. Clients cannot be added if there are no stylists.
 
 ## Setup/Installation Req's:
 

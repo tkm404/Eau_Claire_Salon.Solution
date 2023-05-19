@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Eau_Claire_Salon.Models
+namespace HairSalon.Models
 {
-  public class Eau_Claire_SalonContext : DbContext
+  public class HairSalonContext : DbContext
   {
     public DbSet<PrimaryModel> PrimaryModel { get; set; }
     public DbSet<SecondaryModel> SecondaryModel { get; set; }
 
-    public Eau_Claire_SalonContext(DbContextOptions options) : base(options) { }
+    public HairSalonContext(DbContextOptions options) : base(options) { }
   }
 }
 
