@@ -1,0 +1,13 @@
+.new_stylist_card{
+  display: block;
+  margin: auto;
+  border-style: dashed;
+  padding: 10px;
+}
+
+.menu_links{
+  display: block;
+  margin: auto;
+  border-style:groove;
+  padding: 10px;
+}
