@@ -33,6 +33,12 @@ public class ClientController : Controller
 			return RedirectToAction("Index");
 		}
 
+		public ActionResult Details(int id)
+		{
+			Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientsId == id);
+			return View(thisClient);
+		}
+
 
   }
 }
