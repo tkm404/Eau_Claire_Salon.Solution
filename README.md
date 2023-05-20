@@ -44,13 +44,14 @@ Follow the instructions in the LearnHowToProgram.com lesson ["Creating a Test Da
 }
 ```
 
-(Additional Instructions about how the app do.)
+INSTRUCTIONS:
+Follow the links on each page, and navigate to various forms where you can enter in Stylists (employees), and Clients assigned to each employee. Clicking on Stylist details will show a list of clients assigned to them. Clicking on "All Clients" links will show an overall list of Clients and which Stylists they belong to. That's about it for now! 
 
 ## Known Bugs:
-Any known bugs here
+WIP on styling. Tried to get ambitious (see addArt branch), but I found out a little late that my css folder was in the wrong place. Having trouble staging the images as well.
 
 ## License:
-Git your license, yo!
+(c) 2023 Thomas McDowell ; MIT
 
 ## One More Thing:
 Don't forget to get a picture of your database relations layout with [SQL Designer](https://ondras.zarovi.cz/sql/demo/). Review as needed with [this epicodus lesson](https://www.learnhowtoprogram.com/c-and-net/database-basics/using-sql-designer)
