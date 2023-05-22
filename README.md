@@ -53,5 +53,5 @@ WIP on styling. Tried to get ambitious (see addArt branch), but I found out a li
 ## License:
 (c) 2023 Thomas McDowell ; MIT
 
-## One More Thing:
-Don't forget to get a picture of your database relations layout with [SQL Designer](https://ondras.zarovi.cz/sql/demo/). Review as needed with [this epicodus lesson](https://www.learnhowtoprogram.com/c-and-net/database-basics/using-sql-designer)
+
+![image](https://github.com/tkm404/Eau_Claire_Salon.Solution/assets/127699298/1212eaf6-2cea-4250-a724-df6985868cdc)
