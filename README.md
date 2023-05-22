@@ -53,5 +53,4 @@ WIP on styling. Tried to get ambitious (see addArt branch), but I found out a li
 ## License:
 (c) 2023 Thomas McDowell ; MIT
 
-
-![image](https://github.com/tkm404/Eau_Claire_Salon.Solution/assets/127699298/1212eaf6-2cea-4250-a724-df6985868cdc)
+![image](https://github.com/tkm404/Eau_Claire_Salon.Solution/assets/127699298/2eebb0f8-9312-4b47-a09d-3673dd0b9a2d)
